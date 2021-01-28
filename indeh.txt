@@ -1,5 +1,5 @@
 # HElth Management System
-# clients - Harry,Rohan and Hammad
+# clients - Ram,Shyam,Jitu
 
 import datetime
 
@@ -25,13 +25,13 @@ def take(n):
 
         if (c == 1):
             value = input("Type here :\n")
-            with open("Harry-Exe.txt", "a") as op:
+            with open("Ram-Exe.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
             print("Successfully Write ")
 
         elif (c == 2):
             value = input("Type here:\n")
-            with open("Harry-Food.txt", "a") as op:
+            with open("Ram-Food.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
             print("Successfully Weite:")
 
@@ -39,13 +39,13 @@ def take(n):
         c = int(input("\n[1] *Exercise : \n[2] *Food :\n"))
         if (c == 1):
             value = input("Type here:\n")
-            with open("Rohan-Exe.txt", "a") as op:
+            with open("Shyam-Exe.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
             print("Successfully Write")
 
         elif (c == 2):
             value = input("Type here\n")
-            with open("Rohan-Food.txt", "a") as op:
+            with open("Shyam-Food.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
             print("Sucessfully write")
 
@@ -54,13 +54,13 @@ def take(n):
 
         if (c == 1):
             value = input("Type here:\n")
-            with open("Hamad-Exe.txt", "a") as op:
+            with open("Jitu-Exe.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
             print("Successfully Write:")
 
         elif (c == 2):
             value = input("Type here:\n")
-            with open("Hamad-Food.txt", "a") as op:
+            with open("Jitu-Food.txt", "a") as op:
                 op.write(str([str(gettime())]) + ":" + value + "\n")
             print("Successfully Write:")
 
@@ -69,12 +69,12 @@ def retrieve(n):
     if (n == 1):
         c = int(input("\n[1] *Exercise : \n[2] *Food :\n"))
         if (c == 1):
-            with open("Harry-Exe.txt") as op:
+            with open("Ram-Exe.txt") as op:
                 for i in op:
                     print(i, end="")
 
         elif (c == 2):
-            with open("Harry-Food.txt") as op:
+            with open("Ram-Food.txt") as op:
                 for i in op:
                     print(i, end="")
 
@@ -82,12 +82,12 @@ def retrieve(n):
         c = int(input("\n[1] *Exercise : \n[2] *Food :\n"))
 
         if (c == 1):
-            with open("Rohan-Exe.txt") as op:
+            with open("Shyam-Exe.txt") as op:
                 for i in op:
                     print(i, end="")
 
         elif (c == 2):
-            with open("Rohan-Food.txt") as op:
+            with open("Shyam-Food.txt") as op:
                 for i in op:
                     print(i, end="")
 
@@ -95,12 +95,12 @@ def retrieve(n):
         c = int(input("\n[1] *Exercise : \n[2] *Food :\n"))
 
         if (c == 1):
-            with open("Hamad-Exe.txt") as op:
+            with open("Jitu-Exe.txt") as op:
                 for i in op:
                     print(i, end="")
 
         elif (c == 2):
-            with open("Hamad-Food.txt") as op:
+            with open("Jitu-Food.txt") as op:
                 for i in op:
                     print(i, end="")
 
@@ -109,9 +109,9 @@ print("\n: HEALTH MANAGEMENT SYSTEM :")
 a = int(input("\n[1] *Log the value : \n[2] *Retrieve :\n"))
 
 if (a == 1):
-    b = int(input("\n[1] * Harry: \n[2] * Rohan \n[3] * Hamad: \n"))
+    b = int(input("\n[1] * Ram: \n[2] * Shyam \n[3] * Jitu : \n"))
     take(b)
 
 else:
-    b = int(input("\n[1] *Harry : \n[2] *Rohan \n[3] *Hamad :\n"))
+    b = int(input("\n[1] * Ram : \n[2] * Shyam \n[3] * Jitu :\n"))
     retrieve(b)
